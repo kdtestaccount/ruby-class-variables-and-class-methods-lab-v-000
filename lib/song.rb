@@ -10,7 +10,7 @@ class Song
   GENRES = []
   ARTISTS = []
   MASTER_GENRES = []
-  MASTERARTISTS = []
+  MASTER_ARTISTS = []
   GENRE_COUNT = {}
   ARTIST_COUNT = {}
 
@@ -22,6 +22,8 @@ class Song
     @genre = genre
     @@artists << artist
     @@genres << genre
+    MASTER_ARTISTS << @artist
+    MASTER_GENRES << @genres
     if !ARTISTS.include?(@artist)
       ARTISTS << @artist
     end
