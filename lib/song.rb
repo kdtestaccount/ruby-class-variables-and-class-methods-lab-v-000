@@ -49,7 +49,7 @@ class Song
   
    
   def self.genre_count
-    MASTER_GENRESGENRES.each do |variable|
+    MASTER_GENRES.each do |variable|
       genre_count_int = GENRES.count(variable)
       puts "GENRES ARRAY: #{genre_count_int}"
       GENRE_COUNT.store(variable, genre_count_int)
@@ -58,8 +58,8 @@ class Song
   end 
   
   def self.artist_count
-     MASTER_ARTISTSARTISTS.each do |variable|
-      key_string = ARTISTS.count(variable)
+     MASTER_ARTISTS.each do |variable|
+      key_string = MASTER_ARTISTS.count(variable)
       ARTIST_COUNT.store(variable, key_string)
     end
     ARTIST_COUNT
