@@ -47,6 +47,7 @@ class Song
       key_string = GENRES.count(variable)
       GENRE_COUNT.store(:variable, key_string)
     end
+    GENRE_COUNT
   end 
   
   def self.artist_count
