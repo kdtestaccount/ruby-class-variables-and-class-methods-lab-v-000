@@ -50,7 +50,7 @@ class Song
   
   def self.artist_count
     ARTISTS.each do |variable|
-      ARTIST_COUNT[variable] += 1 
+      ARTIST_COUNT[:variable] += 1 
     end
   end 
   
