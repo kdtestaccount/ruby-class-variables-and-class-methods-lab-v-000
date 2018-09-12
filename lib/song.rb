@@ -51,7 +51,7 @@ class Song
   def self.genre_count
     MASTER_GENRES.each do |variable|
       genre_count_int = MASTER_GENRES.count(variable)
-      puts "GENRES ARRAY: #{genre_count_int}"
+      puts "GENRES ARRAY: #{GENRES}"
       GENRE_COUNT.store(variable, genre_count_int)
     end
     GENRE_COUNT
