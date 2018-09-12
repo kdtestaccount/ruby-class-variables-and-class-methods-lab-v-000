@@ -22,12 +22,9 @@ class Song
     @genre = genre
     @@artists << artist
     @@genres << genre
-    if @artist != nil
       MASTER_ARTISTS << @artist
-    end
-    if @genres != nil
       MASTER_GENRES << @genres
-    end
+
     if !ARTISTS.include?(@artist)
       ARTISTS << @artist
     end
