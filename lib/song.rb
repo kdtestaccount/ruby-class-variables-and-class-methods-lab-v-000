@@ -28,12 +28,12 @@ class Song
   
   def self.genres
     @@genres = GENRES
-    @@genres
+    GENRES
   end 
   
   def self.artists
     @@artists = ARTISTS
-    @@artists
+    AR
   end
       
   def self.genre_count
