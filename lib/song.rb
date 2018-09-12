@@ -9,8 +9,8 @@ class Song
   
   GENRES = []
   ARTISTS = []
-  GENRE_COUNT = []
-  ARTIST_COUNT = []
+  GENRE_COUNT = {}
+  ARTIST_COUNT = {}
 
   
   def initialize(name, artist, genre)
