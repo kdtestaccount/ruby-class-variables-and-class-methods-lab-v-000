@@ -51,6 +51,7 @@ class Song
         key_string = GENRES.count(variable)
         GENRE_COUNT[variable] << key_string.to_i + 1
     end
+    end
     GENRE_COUNT
   end 
   
