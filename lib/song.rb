@@ -44,13 +44,13 @@ class Song
    
   def self.genre_count
     GENRES.each do |variable|
-      GENRE_COUNT[:variable] += 1 
+      GENRE_COUNT[:variable] = +1 
     end
   end 
   
   def self.artist_count
     ARTISTS.each do |variable|
-      ARTIST_COUNT[:variable] += 1 
+      ARTIST_COUNT[:variable] = +1 
     end
   end 
   
