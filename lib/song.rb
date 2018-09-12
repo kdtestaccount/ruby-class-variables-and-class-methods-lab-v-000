@@ -46,7 +46,6 @@ class Song
     GENRES.each do |variable|
       key_string = GENRES.count(variable)
       GENRE_COUNT.store(:variable, key_string)
-
     end
   end 
   
