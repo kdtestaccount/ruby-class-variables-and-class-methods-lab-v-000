@@ -20,7 +20,9 @@ class Song
     @genre = genre
     @@artists << artist
     @@genres << genre
-    ARTISTS << @artist
+    if !ARTISTS.include?(@artist)
+      ARTISTS << @artist
+    end
     GENRES << @genre
   end
   
