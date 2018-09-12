@@ -44,13 +44,8 @@ class Song
    
   def self.genre_count
     GENRES.each do |variable|
-      if !GENRE_COUNT.include?(variable)
-        key_string = GENRES.count(variable)
-        GENRE_COUNT[variable] << key_string.to_i
-      else
-        key_string = GENRES.count(variable)
-        GENRE_COUNT[variable] << key_string.to_i + 1
-    end
+      key_string = GENRES.count(variable)
+      GENRE_COUNT.store(variable, key_string)
     end
     GENRE_COUNT
   end 
