@@ -22,9 +22,6 @@ class Song
     @genre = genre
     @@artists << artist
     @@genres << genre
-      MASTER_ARTISTS << @artist
-      MASTER_GENRES << @genres
-
     if !ARTISTS.include?(@artist)
       ARTISTS << @artist
     end
@@ -50,19 +47,17 @@ class Song
   
    
   def self.genre_count
-    MASTER_GENRES.each do |variable|
-      genre_count_int = MASTER_GENRES.count(variable)
-      puts "GENRES ARRAY: #{GENRES}"
-      puts "MASTER_GENRES ARRAY: #{MASTER_GENRES}"
-
+    GENRES.each do |variable|
+      genre_count_int = GENRES.count(variable)
+      puts "GENRES ARRAY: #{genre_count_int}"
       GENRE_COUNT.store(variable, genre_count_int)
     end
     GENRE_COUNT
   end 
   
   def self.artist_count
-     MASTER_ARTISTS.each do |variable|
-      key_string = MASTER_ARTISTS.count(variable)
+     ARTISTS.each do |variable|
+      key_string = ARTISTS.count(variable)
       ARTIST_COUNT.store(variable, key_string)
     end
     ARTIST_COUNT
