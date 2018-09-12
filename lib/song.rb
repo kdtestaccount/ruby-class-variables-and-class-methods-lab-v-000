@@ -45,6 +45,8 @@ class Song
   def self.genre_count
     GENRES.each do |variable|
       GENRE_COUNT[:variable] = +1 
+      GENRE_COUNT.store(:variable, "value")
+
     end
   end 
   
