@@ -44,8 +44,8 @@ class Song
    
   def self.genre_count
     GENRES.each do |variable|
-      key_string = GENRES.count(variable)
-      GENRE_COUNT.store(variable, key_string)
+      genre_count_string = GENRES.count(variable)
+      GENRE_COUNT.store(variable, genre_count_string)
     end
     GENRE_COUNT
   end 
