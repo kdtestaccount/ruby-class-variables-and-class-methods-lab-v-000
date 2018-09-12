@@ -51,9 +51,11 @@ class Song
   end 
   
   def self.artist_count
-    ARTISTS.each do |variable|
-      ARTIST_COUNT[:variable] = +1 
+     ARTISTS.each do |variable|
+      key_string = ARTISTS.count(variable)
+      ARTIST_COUNT.store(variable, key_string)
     end
+    ARTIST_COUNT
   end 
   
   
