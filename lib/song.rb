@@ -18,6 +18,7 @@ class Song
     @name = name
     @artist = artist
     @genre = genre
+    @@
     ARTISTS << @artist
     GENRES << @genre
   end
@@ -28,15 +29,14 @@ class Song
   
   
   def self.genres
-    @@genres = GENRES
     GENRES
   end 
   
   def self.artists
-    @@artists = ARTISTS
     ARTISTS
   end
-      
+  
+   
   def self.genre_count
     GENRES.each do |variable|
       GENRE_COUNT[variable] += 1 
