@@ -49,7 +49,7 @@ class Song
         GENRE_COUNT.store(variable, key_string)
       else
         key_string = GENRES.count(variable)
-        GENRE_COUNT[variable] << key_string + 1
+        GENRE_COUNT[variable] << key_string.to_i + 1
     end
     GENRE_COUNT
   end 
