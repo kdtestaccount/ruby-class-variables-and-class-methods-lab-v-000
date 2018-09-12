@@ -9,6 +9,8 @@ class Song
   
   GENRES = []
   ARTISTS = []
+  MASTER_GENRES = []
+  MASTERARTISTS = []
   GENRE_COUNT = {}
   ARTIST_COUNT = {}
 
