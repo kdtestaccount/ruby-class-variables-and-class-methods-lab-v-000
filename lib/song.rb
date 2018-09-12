@@ -46,7 +46,7 @@ class Song
     GENRES.each do |variable|
       if !GENRE_COUNT.include?(variable)
         key_string = GENRES.count(variable)
-        GENRE_COUNT.store(variable, key_string)
+        GENRE_COUNT[variable] << key_string.to_i
       else
         key_string = GENRES.count(variable)
         GENRE_COUNT[variable] << key_string.to_i + 1
