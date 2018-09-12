@@ -26,6 +26,8 @@ class Song
     if !GENRES.include?(@genre)
       GENRES << @genre
     end
+    
+    
   end
   
   def self.count
