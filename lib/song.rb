@@ -24,22 +24,22 @@ class Song
   end 
   
   def self.genres
-    @@GENRES
+    @@genres
   end 
   
   def self.artists
-    @@ARTISTS
+    @@artists
   end
       
   def self.genre_count
-    @@GENRES.each do |variable|
-      @@GENRE_COUNT[variable] += 1 
+    @@genres.each do |variable|
+      @@genre_count[variable] += 1 
     end
   end 
   
   def self.artist_count
-    @@ARTISTS.each do |variable|
-      @@ARTIST_COUNT[variable] += 1 
+    @@artists.each do |variable|
+      @@artist_count[variable] += 1 
     end
   end 
   
