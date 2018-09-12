@@ -25,6 +25,7 @@ class Song
     if @artist != nil
       MASTER_ARTISTS << @artist
     end
+    if @genres != nil
     MASTER_GENRES << @genres
     if !ARTISTS.include?(@artist)
       ARTISTS << @artist
